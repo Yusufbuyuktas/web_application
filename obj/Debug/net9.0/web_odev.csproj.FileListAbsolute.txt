@@ -95,3 +95,4 @@ C:\Users\buyuk\web_odev\obj\Debug\net9.0\refint\web_odev.dll
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.pdb
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.genruntimeconfig.cache
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\ref\web_odev.dll
+C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.sourcelink.json

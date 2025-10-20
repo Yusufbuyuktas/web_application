@@ -1,8 +1,51 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    // Bu, tarayıcı sekmesinde görünen başlık
+    ViewData["Title"] = "Ana Sayfa - Yoklama Sistemi";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1 class="display-4">Web Programlama Dersi Yoklama Sistemi</h1>
+
+@* İmzalı Öğrenci Sayısı (Controller'dan gelen listeden sayım yapılır) *@
+<p class="mt-4">
+    **Yoklamayı İmzalamış Öğrenci Sayısı:** <span class="badge bg-success">@ViewBag.SignedStudents.Count</span>
+</p>
+
+@* Navigasyon Linkleri *@
+<p>
+    <a asp-action="AllStudents" class="btn btn-outline-primary me-2">Tüm Öğrencileri Görüntüle</a>
+    <a asp-action="Sign" class="btn btn-success">Yoklama İmzala</a>
+</p>
+
+<hr />
+
+<h2>İmzalı Öğrenciler Listesi</h2>
+@if (ViewBag.SignedStudents.Count == 0)
+{
+    <div class="alert alert-warning">
+        Henüz yoklama imzalayan öğrenci bulunmamaktadır.
+    </div>
+}
+else
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Öğrenci Numarası</th>
+                <th>Adı</th>
+                <th>Soyadı</th>
+                <th>İmzalama Zamanı</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in ViewBag.SignedStudents)
+            {
+                <tr>
+                    <td>@student.StudentID</td>
+                    <td>@student.Name</td>
+                    <td>@student.Surname</td>
+                    <td>@student.SignedAt.ToString("dd.MM.yyyy HH:mm:ss")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
