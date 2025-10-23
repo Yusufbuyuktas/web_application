@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Yoklama İmzala";
+}
+
+<h1 class="display-4">Yoklama İmzalama</h1>
+<p>Lütfen öğrenci numaranızı girerek yoklamayı imzalayınız.</p>
+
+<div class="row">
+    <div class="col-md-6">
+
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+
+       
+        <form asp-action="Sign" method="post">
+            <div class="mb-3">
+                <label for="StudentID" class="form-label">Öğrenci Numarası</label>
+               
+                <input type="number" class="form-control" id="StudentID" name="StudentID" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Yoklamayı İmzala</button>
+            <a asp-action="Index" class="btn btn-outline-secondary">İptal</a>
+        </form>
+    </div>
+</div>

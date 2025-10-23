@@ -14,6 +14,7 @@ C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.csproj.CoreCompileInputs.cache
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.RazorAssemblyInfo.cache
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.RazorAssemblyInfo.cs
+C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.sourcelink.json
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\scopedcss\bundle\web_odev.styles.css
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\scopedcss\projectbundle\web_odev.bundle.scp.css
@@ -95,4 +96,3 @@ C:\Users\buyuk\web_odev\obj\Debug\net9.0\refint\web_odev.dll
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.pdb
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.genruntimeconfig.cache
 C:\Users\buyuk\web_odev\obj\Debug\net9.0\ref\web_odev.dll
-C:\Users\buyuk\web_odev\obj\Debug\net9.0\web_odev.sourcelink.json

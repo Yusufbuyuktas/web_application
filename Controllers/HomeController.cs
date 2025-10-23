@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using web_odev.Models;
+using System.Linq;
 
 
 namespace web_odev.Controllers;
@@ -67,7 +68,16 @@ public class HomeController : Controller
 
     }
 
+public IActionResult AttendanceInfo(int id)
+{
+    var student = Repository.Students.FirstOrDefault(s => s.StudentID == id);
 
+    if (student != null)
+    {
+        return View(student); 
+    }
+        return RedirectToAction("Index");
+}   
     public IActionResult Privacy()
     {
         return View();

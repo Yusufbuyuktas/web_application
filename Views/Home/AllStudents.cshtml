@@ -1,16 +1,13 @@
-@* Controller'dan gelen tüm öğrencileri listeye atıyoruz *@
 @{
     ViewData["Title"] = "Tüm Öğrenciler Listesi";
 }
 
 <h1 class="display-4">Kursa Kayıtlı Tüm Öğrenciler</h1>
 
-@* Toplam Öğrenci Sayısı *@
 <p class="mt-4">
-    **Kursa Kayıtlı Toplam Öğrenci Sayısı:** <span class="badge bg-primary">@ViewBag.AllStudents.Count</span>
+    <strong>Kursa Kayıtlı Toplam Öğrenci Sayısı:</strong> <span class="badge bg-primary">@ViewBag.AllStudents.Count</span>
 </p>
 
-@* Ana Sayfaya Dönüş Linki *@
 <p>
     <a asp-action="Index" class="btn btn-outline-secondary">Ana Sayfaya Dön</a>
 </p>
@@ -44,7 +41,7 @@
                         <span class="badge bg-danger">İmzalanmadı</span>
                     }
                 </td>
-                @* Attendance Info Sayfasına StudentID göndererek yönlendirme yapılır *@
+                
                 <td><a asp-action="AttendanceInfo" asp-route-id="@student.StudentID" class="btn btn-sm btn-info">Detay Gör</a></td>
             </tr>
         }
